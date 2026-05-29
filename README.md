@@ -1,3 +1,3 @@
-File 03_plot_figure_1.R contains scripts to plot the age-seroprevalence curves for ages 1-5 and 1-9 for both survey groups, which is Figure 2a-d in the manuscript.
+File 03_rombo_figure_2.R contains scripts to plot the age-seroprevalence curves for ages 1-5 and 1-9 for both survey groups, which is Figure 2a-d in the manuscript.
 
 File 04_analysis_allages.R also contains the scripts for Figures 3a and 3b, for the age-seroprevalence curves for all-ages for both survey groups. 
