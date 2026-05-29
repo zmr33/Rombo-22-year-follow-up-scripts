@@ -1,6 +1,5 @@
 #'
 #' script to automatically calculate seroconversion rates (SCRs) by EU for trachoma
-#' using a 
 #' 
 #' 
 #' written by zach reynolds,
