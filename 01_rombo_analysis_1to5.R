@@ -47,7 +47,8 @@ library(tidyr)
 
 #------------------------------------------------------------------------------#
 
-#   formalized data cleaning code is available for LFA, MBA, and demo datasets
+#Note:
+#formalized data cleaning code is available for LFA, MBA, and demo datasets
 
 #------------------------------------------------------------------------------#
 
@@ -80,16 +81,13 @@ filtered_data <- wd_mba %>%
 #   analysis prep + analysis for 1–5 year olds below                            
 
 #------------------------------------------------------------------------------#
-
 #variables that need to be included in your final cleaned dataframe
-
 
 #sample_id     character                     unique id for each sample
 #res_eu	       factor or character/integer	 inique id for evaluation unit (EU); used for stratification/faceting
 #res_cluster	 factor or integer             cluster id for sampling unit; used for robust SEs
 #age           numeric	                     age in years (integer); must be positive
 #seropos	     binary numeric (1/0)	         seropositivity indicator: 1 = positive, 0 = negative
-
 
 
 #prep data for 1–5 year olds ----
@@ -142,7 +140,6 @@ print(seroprev_by_age_1to5)
 #   estimate scr by EU for 1–5 ----
 
 #------------------------------------------------------------------------------#
-
 
 #creates our 'scr_summary_1to5' dataframe, 
 #this is the meat of the script and calls our estimate_scr_glm function from above
@@ -372,7 +369,7 @@ age_sero_curve_results_1to5 <- age_sero_curve_results_1to5 %>%
 
 
 
-#--------------------------------------------------------------------------#
+#------------------------------------------------------------------------------#
 
 #save MBA 1-5 outputs ----
 
