@@ -1,5 +1,5 @@
 #'
-#' script to calculate seroconversion rates (SCRs) by district/EU for trachoma in 1 to 9 year olds
+#' script to estimate seroconversion rates (SCRs) by district/EU for trachoma in 1-9 year olds
 #' 
 #' 
 #' written by zach reynolds,
