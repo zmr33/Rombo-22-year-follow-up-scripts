@@ -13,8 +13,8 @@
 #####################################################################
 #####################################################################
 
-#this script was originally written by Michael White, modified by Sara Guagliardo,
-#and now Zach Reynolds
+#this script was originally written by Michael White, 
+#and has since been edited by Zach Reynolds
 
 #------------------------------------------------------------------------------#
 
@@ -34,9 +34,7 @@ library(plyr)
 
 #------------------------------------------------------------------------------#
 
-#set this per run before you do anything
 #change this for each independent MCMC run, e.g. "V1", "V2", "V3", etc. 
-
 #each district should have its own v1, v2, v3 etc
 
 RUN_ID <- "V1"
@@ -61,7 +59,7 @@ RUN_ID <- "V1"
 
 #------------------------------------------------------------------------------#
 #set working directory to the folder containing the input CSV files
-#setwd("C:/Users/tti2/OneDrive - CDC/Trachoma/tanzania_mpwapwa_rombo/scenario 2")
+#setwd("C:/Users/.../OneDrive - CDC/Trachoma/tanzania_mpwapwa_rombo/scenario 2")
 
 
 #read in antibody data
