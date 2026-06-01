@@ -14,7 +14,7 @@
 #####################################################################
 
 #this script was originally written by Michael White, 
-#and has since been edited by Zach Reynolds
+#and has since been edited by zach reynolds
 
 #------------------------------------------------------------------------------#
 
