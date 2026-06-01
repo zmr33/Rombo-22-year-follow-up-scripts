@@ -54,9 +54,9 @@ res_elisa <- estimate_scr_glm(
 # 1. this comparison assumes that the two SCR estimates are independent 
 #     which in this case, is reasonable because surveys were ~10 years apart
 #
-# 2. assumes the esimate log scrs are normally distributed
+# 2. assumes the esimate log scrs are approx. normally distributed
 #     this is a large-sample wald approximation
-#     and is more reasonable when the sample size/#ofpos is not small
+#     and is more reasonable when the sample size/# of pos is not small
 #     and why we compared across 1-9s instead of 1-5s
 #------------------------------------------------------------------------------#
 
