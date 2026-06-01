@@ -100,6 +100,7 @@ ci_log
 rr <- exp(d)
 ci_rr  <- exp(ci_log)
 
+#------------------------------------------------------------------------------#
 
 #output in a labelled list 
 list(
@@ -110,16 +111,3 @@ list(
   rr_upper = ci_rr[2],
   p_value = p
 )
-
-#------------------------------------------------------------------------------#
-
-fit <- glm(seropos ~ 1, offset = log(age),
-           data = wd_mba, family = binomial(link="cloglog"))
-
-se_a <- summary(fit)$coefficients[1,2]
-se_b <- sqrt(vcov(fit)[1,1])
-
-se_a
-se_b
-
-res_mba$logscr_se
