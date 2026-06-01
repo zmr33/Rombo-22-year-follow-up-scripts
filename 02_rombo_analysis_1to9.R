@@ -37,9 +37,8 @@ library(mgcv)
 
 #------------------------------------------------------------------------------#
 
-
 #if you're running those code by itself here's where to set your wd 
-#setwd("C:/Users/tti2/OneDrive - CDC/Trachoma/trachoma workflow/test dataset")
+#setwd("C:/Users/..../OneDrive - CDC/Trachoma/trachoma workflow/test dataset")
 
 #and heres where to import your data
 #working_dataset <- read_excel("test_data_2.xlsx")
