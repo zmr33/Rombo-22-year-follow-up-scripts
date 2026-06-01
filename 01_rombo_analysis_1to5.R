@@ -1,5 +1,5 @@
 #'
-#' script to automatically calculate seroconversion rates (SCRs) by EU for trachoma
+#' script to automatically calculate seroconversion rates (SCRs) by EU for trachoma in 1-5 year olds
 #' 
 #' 
 #' written by zach reynolds, 
