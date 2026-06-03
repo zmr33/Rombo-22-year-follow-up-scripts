@@ -110,6 +110,7 @@ seroprev_by_eu_1to5 <- sero_df_1to5 %>%
   summarise(
     age = "1 to 5 year olds - combined",
     n = n(),
+    n_pos = sum(seropos == 1, na.rm = TRUE),
     seroprev = mean(seropos, na.rm = TRUE) * 100,
     lower_ci = binom.confint(x = round(seroprev / 100 * n), n = n, method = "wilson")$lower * 100,
     upper_ci = binom.confint(x = round(seroprev / 100 * n), n = n, method = "wilson")$upper * 100,
@@ -127,6 +128,7 @@ seroprev_by_age_1to5 <- sero_df_1to5 %>%
   group_by(res_eu, age) %>% #add ",age" to this if you want seroprev by age and eu
   summarise(
     n = n(),
+    n_pos = sum(seropos == 1, na.rm = TRUE),
     seroprev = mean(seropos, na.rm = TRUE) * 100,
     lower_ci = binom.confint(x = round(seroprev / 100 * n), n = n, method = "wilson")$lower * 100,
     upper_ci = binom.confint(x = round(seroprev / 100 * n), n = n, method = "wilson")$upper * 100,
