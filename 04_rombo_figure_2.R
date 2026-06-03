@@ -68,7 +68,7 @@ make_age_sero_plot <- function(analysis_output, age_min, age_max, tag = NULL) {
   seroprev_by_age        <- analysis_output$seroprev_by_age
   scr_summary            <- analysis_output$scr_summary
   
-  #make SCR label robust to whether scr_label already includes "SCR:"
+  #make SCR label bold
   scr_summary <- scr_summary %>%
     mutate(
       scr_label_plot = if_else(
