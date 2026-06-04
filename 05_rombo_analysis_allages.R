@@ -224,7 +224,7 @@ prior_M2 <- function(par_M2) {
 
   #lambda_0 ~ U(0, 10)
   #allows up to 1000 seroconversions per 100 person-years
-  #very broad prior; may allow biologically implausibly high SCR values
+  #very broad prior; may implausibly high SCR values
   
   #if (lambda_0 > 0 && lambda_0 < 10) {
   #  prior_lambda_0 <- log(1/10)
