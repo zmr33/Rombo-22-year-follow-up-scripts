@@ -897,9 +897,9 @@ replayPlot(plot_V2)
 replayPlot(plot_V3)
 
 #uncomment to save, change run ID, same as before
-#save_run_plot(plot_V1, "elisa2022_run1_plot_....tiff")
-#save_run_plot(plot_V2, "elisa2022_run2_plot_....tiff")
-#save_run_plot(plot_V3, "elisa2022_run3_plot_....tiff")
+#save_run_plot(plot_V1, "elisa2022_run1_plot_V1.tiff")
+#save_run_plot(plot_V2, "elisa2022_run2_plot_V2.tiff")
+#save_run_plot(plot_V3, "elisa2022_run3_plot_V3.tiff")
 
 
 #replayPlot(plot_V4)
