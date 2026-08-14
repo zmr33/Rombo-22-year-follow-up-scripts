@@ -681,7 +681,7 @@ plot_current_panel <- function(panel_title = "ELISA, 2022 (all ages)",
   #edit change-point label text here
   tc_expr <- bquote(
     bold("Change-point (tc): ") * .(round1(tc_q[2])) * "y" *
-      " (" * .(round1(tc_q[1])) * "–" * .(round1(tc_q[3])) * "y)"
+      " (" * .(round1(tc_q[1])) * "-" * .(round1(tc_q[3])) * "y)"
   )
   op <- par(xpd = NA)
   inset_xy <- c(0.02, 0.06)
