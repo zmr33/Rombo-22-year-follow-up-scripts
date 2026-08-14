@@ -277,7 +277,7 @@ age_sero_curve_results_1to9 <- foreach(curr_eu = unique(sero_df_1to9$res_eu), .c
   
   #extract coefficient estimates (mean & covariance)
   beta_hat <- coef(gam_fit)                             #fitted gam coefficents
-  V        <- vcov(gam_fit, unconditional = TRUE)       #covariance matrix
+  V        <- vcov(gam_fit, unconditional = FALSE)       #covariance matrix
   
   #draw coefficients and build CI for the mean curve
   #this is the parametric bootstrapping
