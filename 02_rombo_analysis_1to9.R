@@ -276,11 +276,12 @@ age_sero_curve_results_1to9 <- foreach(curr_eu = unique(sero_df_1to9$res_eu), .c
   )
   
   #extract coefficient estimates (mean & covariance)
+  #the estimated smoothing parameter is treated as fixed
   beta_hat <- coef(gam_fit)                             #fitted gam coefficents
   V        <- vcov(gam_fit, unconditional = FALSE)       #covariance matrix
   
-  #draw coefficients and build CI for the mean curve
-  #this is the parametric bootstrapping
+  #simulate coefficient vectors from the approximate fitted coefficient distribution
+  #and use the simulated curves to construct pointwise 95% confidence intervals
   set.seed(555)
   B <- 1000    #                                        #number of bootstrap draws
   beta_draws <- MASS::mvrnorm(B, mu = beta_hat, Sigma = V)
